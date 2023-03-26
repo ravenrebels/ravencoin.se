@@ -1,5 +1,5 @@
-:root{
-    --primary-color-dark: hsl(205deg, 20%, 94%);
+:root {
+  --primary-color-dark: hsl(205deg, 20%, 94%);
 }
 html,
 body {
@@ -13,11 +13,11 @@ body {
 }
 
 article {
-  opacity: 0.9;
+  background: black;
 }
 h1 {
-  background: -webkit-linear-gradient(hotpink,  var( --primary-color-dark));
-  background: linear-gradient(hotpink, var( --primary-color-dark));
+  background: -webkit-linear-gradient(hotpink, var(--primary-color-dark));
+  background: linear-gradient(hotpink, var(--primary-color-dark));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -36,7 +36,11 @@ c-subtitle {
   }
 }
 
-
-.hero{
-    background: radial-gradient(circle at right top, hotpink 8%, hotpink 16%, black 61%);
+.hero {
+  background: radial-gradient(
+    circle at right top,
+    hotpink 8%,
+    hotpink 16%,
+    black 61%
+  );
 }
