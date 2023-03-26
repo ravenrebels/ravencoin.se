@@ -1,0 +1,37 @@
+:root{
+    --primary-color-dark: hsl(205deg, 20%, 94%);
+}
+html,
+body {
+  height: 100%;
+}
+:root {
+  --font-family: "Quicksand";
+}
+body {
+  font-family: "Quicksand", sans-serif !important;
+}
+
+article {
+  opacity: 0.9;
+}
+h1 {
+  background: -webkit-linear-gradient(hotpink,  var( --primary-color-dark));
+  background: linear-gradient(hotpink, var( --primary-color-dark));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+c-subtitle {
+  color: var(--color);
+  display: block;
+  font-family: monospace;
+  font-size: 60%;
+  font-style: italic;
+}
+
+@media screen and (min-width: 1023px) {
+  h1 {
+    font-size: 500%;
+  }
+}
