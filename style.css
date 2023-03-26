@@ -38,5 +38,5 @@ c-subtitle {
 
 
 .hero{
-    background: radial-gradient(circle at right top, hotpink 10%, hotpink, black 70%);
+    background: radial-gradient(circle at right top, hotpink 10%, hotpink 20%, black 70%);
 }
