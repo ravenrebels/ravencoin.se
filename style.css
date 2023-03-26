@@ -35,3 +35,8 @@ c-subtitle {
     font-size: 500%;
   }
 }
+
+
+.hero{
+    background: radial-gradient(circle at right top, black 10%, hotpink, black 70%);
+}
