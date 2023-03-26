@@ -13,7 +13,7 @@ body {
 }
 
 article {
-  background: black;
+    background: radial-gradient( circle at right top, #111111 8%, #111111 16%, black 61% );
 }
 h1 {
   background: -webkit-linear-gradient(hotpink, var(--primary-color-dark));
