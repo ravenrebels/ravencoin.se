@@ -11,7 +11,10 @@ body {
 body {
   font-family: "Quicksand", sans-serif !important;
 }
-
+tweet{
+  display:block;
+  max-width: 200px;
+}
 article {
   background: black;
   background:  linear-gradient(to right, black ,#111111);
