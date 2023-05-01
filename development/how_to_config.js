@@ -13,6 +13,7 @@ You use Remote Procedure Calls (RPC) to read data from the Ravencoin blockchain.
 </ul>
   
 </p>
+<p>To get the balance of one ore many addresses use the RPC call <code>getaddressbalance</code>
   <details>
     <summary>Configuration example for Ravencoin node</summary>
     <pre>
