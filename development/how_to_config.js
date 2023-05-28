@@ -3,15 +3,17 @@ const html = `<article>
 <p>
 You use Remote Procedure Calls (RPC) to read data from the Ravencoin blockchain.
 
-  <ul>
-  <li>You can make RPC calls to an online service such as <a href="https://rpc.ting.finance/">https://rpc.ting.finance/</a>
+  <ol>
+  <li>You can make RPC calls to an online service such as <a href="https://rpc.ting.finance/">https://rpc.ting.finance/</a>.
+  This will drastically <em>kick start</em> your development</li>
   <li>OR, you can set it up yourself by installing a Raven core wallet and running it in server mode. 
     <a href="https://github.com/RavenProject/Ravencoin/releases"
-    >Raven core wallet</a
-  >
+    >Raven core wallet</a>.<br/>
+  Installing Raven core QT wallet and and syncing the blockchain with all the indexes needed can take a day.
   See section <a href="#how-to-configure">How to configure</a> for configuration.
+
   </li>
-</ul>
+</ol>
   
 </p>
 <p >To get the balance of one ore many addresses use the RPC call <code>getaddressbalance</code>
@@ -30,7 +32,14 @@ getblock
 </article>
 <article>
 <h5 id="how-to-configure">How to configure your own Ravencoin node</h5>  
-<p>This is a good tutorial by Tron Black
+<p>On windows, download Raven core QT wallet from ravencoin.org.
+Start it, after some minutes close the app. Locate your raven.conf file (in your wallet data directory).</p>
+<p>
+Change the configuration to get all indexes needed (see "Configuration example for Ravencoin node").
+Start Raven QT again and let it sync.
+</p>
+
+<p>This is a good tutorial by Tron Black describing how to run Raven on linux on a Virtual Private Server.
 <a href="https://tronblack.medium.com/ravencoin-how-to-run-full-nodes-85f92d2ebc1a">Ravencoin — How to Run Full Nodes</a>
 </p>
 <details>
