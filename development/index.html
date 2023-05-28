@@ -55,7 +55,9 @@
     <main class="container">
       <article class="hero">
         <c-subtitle>Ravencoin community <small>SWEDEN</small></c-subtitle>
-        <h1><a href="/">Raven<wbr />coin</a></h1>
+        <h1>
+          <a href="/">Raven<wbr />coin</a>
+        </h1>
         <h2>Ravencoin integration guide for developers</h2>
         <i>
           The blockchain is a list of transactions that outputs coins and or
@@ -64,9 +66,39 @@
       </article>
 
       <what-is-a-wallet></what-is-a-wallet>
+
+      <article>
+        <h4>Overview</h4>
+        <p>
+          Building something for/on Ravencoin most likely mean that you want to
+          read and write data
+        </p>
+
+        <ul>
+          <li>Start with 12 words (the wallet)</li>
+          <li>Based on the 12 words, derive/generate addresses</li>
+          <li>Check the balance of the addresses on the blockchain</li>
+          <li>
+            To send/transfer
+            <ul>
+              <li>
+                You first need to get all the Unspent
+                transaction output (UTXOs) for you addresses
+              </li>
+              <li>Filter out enough UTXOs for the transaction</li>
+              <li>
+                Use rpc call <code>createrawtransaction</code> to create a transaction spending the given inputs and creating new outputs.
+                Use your "enough" UTXOs as input</li>
+              </li>
+              <li>Sign the raw transaction</li>
+              <li>Broadcast the raw transaction</li>
+            </ul>
+          </li>
+        </ul>
+        <a href="https://www.ravenrebels.com" target="_blank">Raven Rebels have NPM packages for all of these steps</a>
+      </article>
       <how-to-config></how-to-config>
       <rpc-help></rpc-help>
-       
 
       <h3>More stuff for developers</h3>
       <p>
@@ -80,6 +112,6 @@
         Brought to you by <a href="https://www.ravenrebels.com">Raven Rebels</a>
       </p>
     </main>
-    <script src="/development/index.js" type="module"></script> 
+    <script src="/development/index.js" type="module"></script>
   </body>
 </html>

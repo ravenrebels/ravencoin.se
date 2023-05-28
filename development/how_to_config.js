@@ -29,7 +29,10 @@ getblock
 </p>    
 </article>
 <article>
-<h5 id="how-to-configure">How to configure a Ravencoin node</h5>
+<h5 id="how-to-configure">How to configure your own Ravencoin node</h5>  
+<p>This is a good tutorial by Tron Black
+<a href="https://tronblack.medium.com/ravencoin-how-to-run-full-nodes-85f92d2ebc1a">Ravencoin — How to Run Full Nodes</a>
+</p>
 <details>
     <summary>Configuration example for Ravencoin node</summary>
     <pre>
