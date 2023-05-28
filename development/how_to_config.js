@@ -1,11 +1,11 @@
 const html = `<article>
-<h3>How can I read information from Ravencoin blockchain?</h3>
+<h3>How can I interact with Ravencoin blockchain?</h3>
 <p>
 You use Remote Procedure Calls (RPC) to read data from the Ravencoin blockchain.
 
   <ol>
   <li>You can make RPC calls to an online service such as <a href="https://rpc.ting.finance/">https://rpc.ting.finance/</a>.
-  This will drastically <em>kick start</em> your development</li>
+  This will drastically <em>kick start</em> your development.</li>
   <li>OR, you can set it up yourself by installing a Raven core wallet and running it in server mode. 
     <a href="https://github.com/RavenProject/Ravencoin/releases"
     >Raven core wallet</a>.<br/>
