@@ -4,11 +4,12 @@ const html = `<article>
 You use Remote Procedure Calls (RPC) to read data from the Ravencoin blockchain.
 
   <ul>
-  <li>You can RPC calls to an online service such as <a href="https://rpc.ting.finance/">https://rpc.ting.finance/</a>
+  <li>You can make RPC calls to an online service such as <a href="https://rpc.ting.finance/">https://rpc.ting.finance/</a>
   <li>OR, you can set it up yourself by installing a Raven core wallet and running it in server mode. 
-  <a href="https://github.com/RavenProject/Ravencoin/releases"
+    <a href="https://github.com/RavenProject/Ravencoin/releases"
     >Raven core wallet</a
   >
+  See section <a href="#how-to-configure">How to configure</a> for configuration.
   </li>
 </ul>
   
@@ -25,7 +26,10 @@ getrawtransaction
 getblockhash
 getblock
 </code></pre>
-</p>  
+</p>    
+</article>
+<article>
+<h5 id="how-to-configure">How to configure a Ravencoin node</h5>
 <details>
     <summary>Configuration example for Ravencoin node</summary>
     <pre>
@@ -61,8 +65,8 @@ dbcache=4096
 upnp=1
 </code></pre>
   </details>
-
-</article>`;
+  </article>
+`;
 class Asdf extends HTMLElement {
   constructor() {
     super();
