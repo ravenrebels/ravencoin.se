@@ -5,7 +5,7 @@ You use Remote Procedure Calls (RPC) to read data from the Ravencoin blockchain.
 
   <ul>
   <li>You can RPC calls to an online service such as <a href="https://rpc.ting.finance/">https://rpc.ting.finance/</a>
-  <li>OR, you can set it up yourself by installing a Raven core wallet and running it in server mode.l
+  <li>OR, you can set it up yourself by installing a Raven core wallet and running it in server mode. 
   <a href="https://github.com/RavenProject/Ravencoin/releases"
     >Raven core wallet</a
   >
@@ -13,8 +13,20 @@ You use Remote Procedure Calls (RPC) to read data from the Ravencoin blockchain.
 </ul>
   
 </p>
-<p>To get the balance of one ore many addresses use the RPC call <code>getaddressbalance</code>
-  <details>
+<p >To get the balance of one ore many addresses use the RPC call <code>getaddressbalance</code>
+<p><label>Popular RPC calls</label>
+<pre><code>getaddressdeltas
+getaddressbalance
+getaddressmempool
+getaddressutxos
+getrawmempool
+getrawtransaction
+
+getblockhash
+getblock
+</code></pre>
+</p>  
+<details>
     <summary>Configuration example for Ravencoin node</summary>
     <pre>
 <code> 
