@@ -9,7 +9,7 @@ You use Remote Procedure Calls (RPC) to read data from the Ravencoin blockchain.
   <li>OR, you can set it up yourself by installing a Raven core wallet and running it in server mode. 
     <a href="https://github.com/RavenProject/Ravencoin/releases"
     >Raven core wallet</a>.<br/>
-  Installing Raven core QT wallet and and syncing the blockchain with all the indexes needed can take a day.
+  Installing Raven core QT wallet and syncing the blockchain with all the indexes needed can take a day.
   See section <a href="#how-to-configure">How to configure</a> for configuration.
 
   </li>
