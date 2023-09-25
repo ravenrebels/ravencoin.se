@@ -1,6 +1,6 @@
 :root {
   --primary-color-dark: hsl(205deg, 20%, 94%);
-} 
+}
 html,
 body {
   height: 100%;
@@ -11,13 +11,13 @@ body {
 body {
   font-family: "Quicksand", sans-serif !important;
 }
-tweet{
-  display:block;
+tweet {
+  display: block;
   max-width: 200px;
 }
 article {
   background: black;
-  background:  linear-gradient(to right, black ,#111111);
+  background: linear-gradient(to right, black, #111111);
 }
 h1 {
   background: -webkit-linear-gradient(hotpink, var(--primary-color-dark));
@@ -47,4 +47,8 @@ c-subtitle {
     hotpink 16%,
     black 61%
   );
+}
+
+code {
+  white-space: pre;
 }
