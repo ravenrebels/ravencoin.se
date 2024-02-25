@@ -2,7 +2,7 @@ const html = `<article>
 <h3>What is a wallet?</h3>
 <ol>
   <li>
-    Wallet can mean a users "balance" on the blockchain. Like "I have
+    Wallet can mean a user's "balance" on the blockchain. Like "I have
     300 RVN coins in my wallet". Usually you get a 12 words backup
     phrase that you can use with any software. Doesnt matter if you are
     on your Windows desktop computer or on your iPhone, the same 12
