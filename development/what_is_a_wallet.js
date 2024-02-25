@@ -9,9 +9,7 @@ const html = `<article>
     words show the same balance.
   </li>
   <li>
-    Wallet can mean the software, the app, used to interact with the
-    blockchain. If someone asks, "which wallet do you recommend", they
-    are referring to software.
+  A 'wallet' can refer to the software or app used to interact with the blockchain. So, when someone asks, 'Which wallet do you recommend?' they are basically asking about the software.
   </li>
 </ol>
 </article>`;
