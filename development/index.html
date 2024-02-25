@@ -69,32 +69,28 @@
 
       <article>
         <h3>Overview</h3>
-        <p>
-          Building something for/on Ravencoin most likely mean that you want to
-          read and write data
-        </p>
-
-        <ul>
-          <li>Start with 12 words (the wallet)</li>
-          <li>Based on the 12 words, derive/generate addresses</li>
-          <li>Check the balance of the addresses on the blockchain</li>
-          <li>
-            To send/transfer
-            <ul>
-              <li>
-                You first need to get all the Unspent
-                transaction output (UTXOs) for your addresses
-              </li>
-              <li>Filter out enough UTXOs for the transaction</li>
-              <li>
-                Use rpc call <code>createrawtransaction</code> to create a transaction spending the given inputs and creating new outputs.
-                Use your "enough" UTXOs as input</li>
-              </li>
-              <li>Sign the raw transaction</li>
-              <li>Broadcast the raw transaction</li>
-            </ul>
-          </li>
-        </ul>
+        <p>When developing with Ravencoin, you're essentially engaging with the blockchain to store and retrieve data. Here’s a simplified roadmap:</p>
+        <ol>
+            <li>
+                <strong>Initialization</strong>: Everything starts with your 12-word backup phrase, which secures your blockchain wallet.
+            </li>
+            <li>
+                <strong>Address Generation</strong>: From these 12 words, you create addresses that represent destinations for Ravencoin transactions.
+            </li>
+            <li>
+                <strong>Balance Inquiry</strong>: Check how much Ravencoin you have by looking up the balance of your addresses on the blockchain.
+            </li>
+            <li>
+                <strong>Making Transactions</strong>:
+                <ul>
+                    <li>Gather all Unspent Transaction Outputs (UTXOs) associated with your addresses. UTXOs are like individual bills or coins in a conventional wallet.</li>
+                    <li>Select enough UTXOs to cover your intended transaction.</li>
+                    <li>Create a raw transaction using the <code>createrawtransaction</code> RPC call, specifying the UTXOs to spend and the transaction's recipients.</li>
+                    <li>Sign this transaction to prove ownership of the UTXOs.</li>
+                    <li>Broadcast the signed transaction to the Ravencoin network to complete the transfer.</li>
+                </ul>
+            </li>
+        </ol>
          <h4>Libraries for JavaScript developers</h4>
         <p>
           Checkout <a href="https://www.ravenrebels.com">Raven Rebels</a> for
