@@ -1,16 +1,41 @@
 import axios from "https://cdn.skypack.dev/axios";
 class Asdf extends HTMLElement {
+  filter = "";
   async connectedCallback() {
     this.innerHTML = `<article>
         <h4>RPC help</h4>
         <p>Here you find all RPC calls that Ravencoin support</p>
+        <label type="search">Filter
+        <input style="max-width: 200px"/>
+        </label>
         <select>
         </select>
         <code>
         </code>
         </article>`;
-
     const select = this.querySelector("select");
+    const filterInput = this.querySelector("input");
+    function filter(e) {
+      const filterValue = e.target.value;
+
+      //Show everything if no filter
+      if (!filterValue) {
+        select
+          .querySelectorAll("option")
+          .forEach((option) => (option.style.display = "block"));
+        return;
+      }
+
+      //Filter out stuff
+      select.querySelectorAll("option").forEach((option) => {
+        const optionValue = option.value;
+        option.style.display = optionValue.includes(filterValue)
+          ? "block"
+          : "none";
+      });
+    }
+    filterInput.addEventListener("keyup", filter);
+    filterInput.addEventListener("change", filter);
 
     select.addEventListener("change", async function (event) {
       const value = event.target.value;
@@ -31,8 +56,8 @@ class Asdf extends HTMLElement {
         o.setAttribute("value", value);
         if (line.startsWith("==")) {
           o.setAttribute("disabled", true);
-          o.style.fontSize="1.5rem";
-          o.style.marginTop="2rem";
+          o.style.fontSize = "1.5rem";
+          o.style.marginTop = "2rem";
         }
       }
     });
