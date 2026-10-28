@@ -3,13 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0d17" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Quicksand:300,500"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css"
     />
     <link rel="stylesheet" href="/style.css" />
 
@@ -53,7 +52,7 @@
   </head>
   <body>
     <main class="container">
-      <article class="hero">
+      <header class="hero">
         <c-subtitle>Ravencoin community <small>SWEDEN</small></c-subtitle>
         <h1>
           <a href="/">Raven<wbr />coin</a>
@@ -63,7 +62,7 @@
           The blockchain is a list of transactions that outputs coins and or
           assets.
         </i>
-      </article>
+      </header>
 
       <what-is-a-wallet></what-is-a-wallet>
 
@@ -97,8 +96,10 @@
           Node.js/JavaScript tools and tutorials.
           Raven Rebels have NPM packages for all of these steps above.
         </p>
-        Ravencoin as a service,
-        <a href="https://rpc.ting.finance">RPC.ting.finance</a>
+        <p>
+          Ravencoin as a service,
+          <a href="https://rpc.ting.finance">RPC.ting.finance</a>
+        </p>
       </article>
  
       <how-to-config></how-to-config>
@@ -106,9 +107,11 @@
 
    
 
-      <p>
-        Brought to you by <a href="https://www.ravenrebels.com">Raven Rebels</a>
-      </p>
+      <footer class="site-footer">
+        <p>
+          Brought to you by <a href="https://www.ravenrebels.com">Raven Rebels</a>
+        </p>
+      </footer>
     </main>
     <script src="/development/index.js" type="module"></script>
   </body>
