@@ -1,0 +1,249 @@
+/* ravencoin.se — simple, readable, no framework */
+:root {
+  --text: #16181d;
+  --muted: #5b6070;
+  --bg: #ffffff;
+  --line: #e4e6ec;
+  --soft: #f5f6f9;
+  --blue: #384182;
+  --orange: #f05423;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+main,
+footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+main {
+  padding-top: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.25;
+  margin: 2rem 0 0.75rem;
+  font-weight: 650;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 7vw, 3.5rem);
+  letter-spacing: -0.02em;
+  color: var(--blue);
+  margin: 0.25rem 0 1rem;
+}
+
+h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1.375rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4,
+h5 {
+  font-size: 1.05rem;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1rem;
+}
+
+ul,
+ol {
+  padding-left: 1.25rem;
+}
+
+li {
+  margin: 0.3rem 0;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  color: var(--orange);
+}
+
+section {
+  border-top: 1px solid var(--line);
+  margin-top: 2.5rem;
+}
+
+section > h2:first-child {
+  margin-top: 2.5rem;
+}
+
+.hero {
+  padding-bottom: 0.5rem;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.eyebrow span {
+  color: var(--orange);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.8rem;
+  margin-left: 0.25rem;
+}
+
+.lead {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+footer {
+  margin-top: 3.5rem;
+  padding-top: 1.25rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Developer page: articles, code, form controls */
+article {
+  border-top: 1px solid var(--line);
+  margin-top: 2.5rem;
+  padding-top: 0.5rem;
+}
+
+article.hero {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+article.hero h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 0.9em;
+  background: var(--soft);
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+
+pre {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 1rem;
+  overflow-x: auto;
+  line-height: 1.5;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  font-size: 0.875rem;
+}
+
+/* RPC help output is a bare <code> block */
+rpc-help code {
+  display: block;
+  white-space: pre-wrap;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid var(--line);
+  font-size: 0.875rem;
+}
+
+rpc-help code:empty {
+  display: none;
+}
+
+details {
+  margin: 1rem 0;
+}
+
+summary {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+select {
+  font: inherit;
+  font-size: 1rem;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid #c9ccd6;
+  border-radius: 4px;
+  padding: 0.4rem 0.6rem;
+  max-width: 100%;
+}
+
+label input {
+  display: block;
+  margin-top: 0.25rem;
+}
+
+select {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+c-subtitle {
+  display: block;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+c-subtitle small {
+  color: var(--orange);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  font-size: 0.8rem;
+}
